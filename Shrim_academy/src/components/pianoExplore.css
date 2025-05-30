@@ -1,0 +1,9 @@
+.piano-explore{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100vw;
+    height:93vh;
+    background: linear-gradient(133deg,rgba(2, 0, 36, 1) 0%, rgba(92, 9, 117, 1) 35%, rgba(23, 14, 14, 1) 100%);
+}
+

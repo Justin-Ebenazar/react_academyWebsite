@@ -1,0 +1,91 @@
+/* src/components/CustomSelect.css */
+
+/* Main container for the custom select */
+.custom-select-container {
+    position: relative; /* Crucial for positioning the dropdown list absolutely */
+    width: 100%; /* Take full width of parent */
+    max-width: 200px; /* Example max-width, adjust as needed for your form */
+    font-family: 'Inter', sans-serif; /* Use your preferred font */
+}
+
+/* The visible 'input' part of the dropdown */
+.custom-select-display {
+    display: flex;
+    justify-content: space-between; /* Puts label on left, arrow on right */
+    align-items: center;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: #ffffff; /* Text color for the displayed value/placeholder */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Indicates it's clickable */
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transitions for hover/focus effects */
+    min-height: 40px; /* Ensure a minimum height for consistency */
+    box-sizing: border-box; /* Include padding/border in element's total width/height */
+}
+
+.custom-select-display:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
+}
+
+.custom-select-display:focus {
+    outline: none; /* Remove default browser focus outline */
+}
+
+/* Custom arrow icon */
+.custom-select-arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #ffffff; /* Solid white triangle pointing down */
+    transition: transform 0.3s ease; /* Smooth rotation when opening */
+    margin-left: 10px; /* Space between text and arrow */
+}
+
+/* Rotate arrow when the dropdown is open */
+.custom-select-display.open .custom-select-arrow {
+    transform: rotate(180deg); /* Arrow points up when open */
+}
+
+/* The actual dropdown list of options */
+.custom-select-options {
+    position: absolute;
+    top: 100%; /* Position directly below the custom-select-display */
+    left: 0;
+    width: 100%;
+    max-height: 200px; /* Maximum height before content becomes scrollable */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+    background-color: #b9b9b9c7; /* Dark background for the dropdown menu */
+    backdrop-filter: blur(10px); /* Subtle blur effect for a frosted glass look */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for the dropdown */
+    border-radius: 8px; /* Rounded corners for the dropdown menu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    z-index: 1000; /* Ensure it appears on top of other content */
+    list-style: none; /* Remove default list item bullets */
+    padding: 5px 0; /* Padding inside the dropdown list */
+    margin: 4px 0 0 0; /* Small space between the display and the opened list */
+    box-sizing: border-box; /* Include padding/border in element's total width/height */
+}
+
+/* Individual option items within the dropdown list */
+.custom-select-option {
+    padding: 10px 15px;
+    color: #000000; /* White text for options */
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Smooth background change on hover */
+    font-size: 16px;
+}
+
+.custom-select-option:hover,
+.custom-select-option:focus ,
+.custom-select-option.selected:hover{
+    background-color: #27202b6b; /* Highlight background on hover or focus */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Style for the currently selected option in the list (if applicable) */
+.custom-select-option.selected {
+    background-color: #3f064b00; /* Different background for selected item */
+    font-weight: bold; /* Make selected item bold */
+}

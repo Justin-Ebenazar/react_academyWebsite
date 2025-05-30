@@ -1,0 +1,251 @@
+Shrim Music Academy Website Content Specification
+This document outlines the content requirements for the Shrim Music Academy website. It is designed to provide a clear and comprehensive guide for the UI/UX designer.
+
+1. Pages Required
+The website will consist of the following pages:
+
+Home Page
+
+Explore Pages (Piano, Guitar, Musical Keyboard, Vocal)
+
+Registration Forms (integrated within each section/page)
+
+About Section
+
+Contact Us Section
+
+2. Home Page
+The home page serves as the primary entry point for the website and should provide a compelling overview of Shrim Music Academy.
+
+2.1 Hero Section
+Headline: "Unleash Your Musical Potential with Shrim Music Academy"
+
+Subheadline: "Discover the joy of music with our expert instructors and personalized lessons. Whether you're a beginner or an advanced musician, we have something for everyone. Join us to explore your passion for music and unlock your true potential. At Shrim Music Academy, we believe in nurturing talent and inspiring creativity."
+
+Call to Action: "Enroll Now" (Button, links to the registration form)
+
+2.2 Instrument Sections (Piano, Guitar, Musical Keyboard, Vocal)
+These sections will highlight the core instruments taught at the academy. Each section should have a visually distinct presentation.
+
+Common Structure:
+
+Eye-catching Section Title (e.g., "Piano Mastery," "Guitar Virtuosity," "Keyboard Excellence," "Vocal Brilliance")
+
+Concise Description (2-3 lines) emphasizing the unique aspects of learning that instrument at Shrim Music Academy.
+
+Logos/Affiliations (where applicable):
+
+Piano: Trinity College London, ABRSM (Associated Board of the Royal Schools of Music), "Personalized Teaching" logo/icon.
+
+Musical Keyboard: Trinity College London,ABRSM (Associated Board of the Royal Schools of Music), "Personalized Teaching" logo/icon,carnatic music.
+
+Guitar: Emphasize Carnatic music focus.
+
+Vocal: Emphasize Carnatic music focus.
+
+Call to Action Buttons:
+
+"Enroll" (Opens registration form)
+
+"Explore" (Links to the respective instrument's Explore Page)
+
+Section-Specific Details:
+
+Piano Section:
+
+Description should highlight the structured curriculum, exam preparation (Trinity, ABRSM), and personalized approach to piano education.
+
+Guitar Section:
+
+Description should emphasize the teaching of Carnatic music on the guitar, the unique techniques involved, and the rich tradition.
+
+Musical Keyboard Section:
+
+Description should mention the versatility of the keyboard, the curriculum (including Trinity College London), and the option to learn both Western and Carnatic styles.
+
+Vocal Section:
+
+Description should focus on Carnatic vocal training, the development of voice culture, and the importance of tradition and technique.
+
+3. Explore Pages (Piano, Guitar, Musical Keyboard, Vocal)
+These pages provide detailed information about each instrument and the courses offered.
+
+Common Elements:
+
+Attractive Instrument Image: High-quality image of the instrument being highlighted.
+
+Detailed Description: In-depth information about the instrument, the learning process, and the curriculum at Shrim Music Academy.
+
+"Enroll Now" Button: Prominently displayed call to action.
+
+Fee Structure: Consistent presentation across all Explore Pages.
+
+Frequently Asked Questions (FAQs): Include animated presentation.
+invlude some dummy qusetions , i will update
+
+Page-Specific Details:
+
+Piano Explore Page:
+
+Detailed Text: Expand on the piano curriculum, the significance of Trinity College London and ABRSM certifications, and the benefits of personalized piano instruction.
+
+Musical Keyboard Explore Page:
+
+Detailed Text: Provide more information about learning both Western and Carnatic music on the keyboard, the advantages of this versatility, and the curriculum structure.
+
+Guitar Explore Page:
+
+Detailed Text: Elaborate on learning Carnatic music on the guitar, the specific techniques, ragas, and compositions taught, and the importance of preserving this musical tradition.
+
+Vocal Explore Page:
+
+Detailed Text: Explain the Carnatic vocal training offered, the focus on voice culture, the development of skills in swaras, ragas, and kritis, and the guru-shishya parampara (teacher-student tradition).
+
+3.1 Fee Structure
+The fee structure should be clearly presented on each Explore Page.
+
+Heading: "Fee Structure"
+
+Format: Tabular or list format for easy comparison.
+
+Content:
+
+Online Classes:
+
+Individual: 4 classes - INR 3999, 6 classes - INR 5699
+
+Combined: 4 classes - INR 1899, 6 classes - INR 2599
+
+In-Person Classes:
+
+Individual: 4 classes - INR 4999, 6 classes - INR 5799
+
+Combined: 4 classes - INR 1999, 6 classes - INR 2699
+
+3.2 Frequently Asked Questions (FAQs)
+Include a section with animated FAQs to address common queries from prospective students.
+
+Heading: "Frequently Asked Questions"
+
+Format: Accordion-style or other visually engaging animated presentation.
+
+Content:
+
+"Can I learn music at this age?" (Answer: Yes, music can be learned at any age with dedication and the right guidance.)
+
+"Are online classes effective for learning music?" (Answer: Yes, online classes offer flexibility and personalized instruction, and can be very effective with the right platform and teaching methodology. Shrim Music Academy uses a platform and teaching methodology that ensures effective learning)
+
+"What is the duration of each class?" (Add answer)
+
+"What are the class timings?" (Add answer)
+
+"Do you provide certificates?" (Add answer)
+
+"What is the teaching methodology?" (Add answer)
+
+"Is there a trial period?" (Add answer)
+
+"What happens if I miss a class?" (Add answer)
+
+Add 2-3 more relevant questions
+
+4. Registration Form
+The registration form will be a crucial element, integrated into the "Enroll Now" call to action.the reg form must be the most attractive
+
+Integration: The form should ideally be a modal or overlay that appears when the "Enroll Now" button is clicked, providing a seamless user experience.
+
+Fields:
+
+Name (Full Name) - Required
+
+Age - Required
+
+Contact Number (Mobile Number) - Required
+
+Email Address - Required
+
+Course Selection (Dropdown) - Required
+
+Options: Piano, Guitar, Musical Keyboard, Vocal
+
+Keyboard Style (Dropdown, appears only if "Musical Keyboard" is selected in Course Selection)
+
+Options: Western, Carnatic
+
+Class Mode (Dropdown) - Required
+
+Options: Online - Individual, Online - Combined, In-Person - Individual, In-Person - Combined
+
+Preferred Class Timings - Optional
+
+Student's Current skill level (Beginner, Intermediate, Advanced) - Optional
+
+Submission: A clear "Submit" button.
+
+Confirmation: A confirmation message or page after successful submission.
+
+5. About Section
+The About section provides background information about Shrim Music Academy and its founder.
+
+Heading: "About Shrim Music Academy"
+
+Content:
+
+Founder's Profile:
+
+S. Ebenazar 25+ years of experience in the music industry.
+
+Experienced teacher with a proven track record of preparing students for exams.
+
+Film music director (Add notable works or achievements).
+
+Vision and philosophy for music education.
+
+Shrim Music Academy:
+
+History and background of the academy.
+
+Mission to provide high-quality music education and make it accessible.
+
+Core values and teaching philosophy.
+
+Why Choose Shrim Music Academy?
+
+A section highlighting the unique advantages of learning at Shrim Music Academy.
+
+Points to Emphasize:
+
+Expert instructors with extensive experience.
+
+Personalized teaching approach tailored to individual student needs.
+
+Comprehensive curriculum covering various skill levels.
+
+Focus on both theoretical knowledge and practical application.
+
+Preparation for recognized music certifications (Trinity, ABRSM).
+
+A supportive and inspiring learning environment.
+
+Flexible learning options (online and in-person classes).
+
+Emphasis on Carnatic and Western music styles.
+
+Affordable fee structure.
+
+Add any other unique selling points.
+
+6. Contact Us Section
+The Contact Us section provides visitors with the necessary information to get in touch with Shrim Music Academy.
+
+Heading: "Contact Us"
+
+Content:
+
+Mobile Number: (Provide Number)
+
+Email Address: (Provide Email)
+
+Working Hours: (Provide Details)
+
+This detailed specification should give your UI/UX designer a clear understanding of the content, structure, and functionality required for the Shrim Music Academy website.

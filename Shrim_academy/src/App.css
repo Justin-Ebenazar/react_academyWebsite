@@ -1,0 +1,18 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Replace your current body styles with this */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* Crucial for preventing horizontal scroll */
+}

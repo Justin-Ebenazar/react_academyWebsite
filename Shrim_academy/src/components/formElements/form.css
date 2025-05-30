@@ -1,0 +1,107 @@
+
+.enrollment-form-container {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background (20% opacity) */
+    backdrop-filter: blur(10px); /* Apply blur effect for glassmorphism */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
+    border-radius: 15px; /* Rounded corners as requested */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Deeper, more diffused shadow */
+    max-width: 500px;
+    width: 100%; /* Ensure it's responsive */
+    margin: 0 auto; /* Center horizontally */
+    padding: 30px; /* Increased padding for better spacing */
+    box-sizing: border-box; /* Include padding in width/height */
+    text-align: center; /* Center the heading and messages */
+}
+
+.enrollment-form-container h2 {
+    color: #ffffff; /* White heading for contrast against transparent background */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow for readability */
+    margin-bottom: 25px;
+    font-size: 2.2em; /* Slightly larger heading */
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased margin for better separation */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* More space below label */
+    font-weight: 600;
+    color: #e0e0e0; /* Lighter label color for contrast */
+}
+
+.form-group input {
+    width: calc(100% - 22px); /* Adjust width for padding and border */
+    padding: 11px; /* Slightly more padding */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Lighter border for inputs */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent input background */
+    color: #ffffff; /* White text inside input */
+    border-radius: 8px; /* Slightly rounded input corners */
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+.form-group input:focus {
+    border-color: #9c27b0; /* A vibrant purple on focus */
+    box-shadow: 0 0 0 3px rgba(156, 39, 176, 0.3); /* Soft glow on focus */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque on focus */
+    outline: none;
+}
+
+button[type="submit"] {
+    background: linear-gradient(45deg, #6a1b9a, #9c27b0); /* Gradient button background */
+    color: white;
+    padding: 12px 20px; /* More padding for a larger button */
+    border: none;
+    border-radius: 8px; /* Rounded button corners */
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    margin-top: 25px;
+    width: 100%; /* Make button full width */
+}
+
+button[type="submit"]:hover:not(:disabled) {
+    background: linear-gradient(45deg, #9c27b0, #6a1b9a); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+button[type="submit"]:disabled {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.message {
+    margin-top: 20px; /* More margin above messages */
+    padding: 12px; /* More padding for messages */
+    border-radius: 8px; /* Rounded message corners */
+    font-weight: 600;
+    text-align: center;
+}
+
+.message.success {
+    background: rgba(212, 237, 218, 0.8); /* Semi-transparent success background */
+    color: #155724;
+    border: 1px solid rgba(195, 230, 203, 0.8);
+}
+
+.message.error {
+    background: rgba(248, 215, 218, 0.8); /* Semi-transparent error background */
+    color: #721c24;
+    border: 1px solid rgba(245, 198, 203, 0.8);
+}
