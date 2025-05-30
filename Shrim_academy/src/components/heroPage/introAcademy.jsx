@@ -1,5 +1,5 @@
 import './introAcademy.css'; // Import CSS for styling
-import pianoBackground from '../assets/playing_piano_background.jpg'; // Adjust the path if necessary
+import pianoBackground from '../../assets/playing_piano_background.jpg'; // Adjust the path if necessary
 
 const IntroAcademy = () => {
     return (

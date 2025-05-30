@@ -1,11 +1,11 @@
 import './courses.css';
-import pianoCourse from '../assets/piano_course.jpg';
-import guitarCourse from '../assets/guitarCourse.jpg';
-import keyboardCourse from '../assets/electronickeyboardCourse.jpg';
-import trinityLogo from '../assets/trinityLogo.png';
-import abrsmLogo from '../assets/abrsmLogo.png';
-import pianoLogo from '../assets/pianoLogo.png';
-import Form from './formElements/styleForm';
+import pianoCourse from '../../assets/piano_course.jpg';
+import guitarCourse from '../../assets/guitarCourse.jpg';
+import keyboardCourse from '../../assets/electronickeyboardCourse.jpg';
+import trinityLogo from '../../assets/trinityLogo.png';
+import abrsmLogo from '../../assets/abrsmLogo.png';
+import pianoLogo from '../../assets/pianoLogo.png';
+import Form from '../formElements/styleForm';
 
 function Courses() {
 return (

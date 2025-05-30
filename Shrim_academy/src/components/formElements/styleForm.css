@@ -67,6 +67,8 @@
 }
 
 .close-button{
+    outline: none;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +81,6 @@
     width: 30px; /* Make it a perfect circle with height */
     background-color: rgba(0,0,0,0);
     border-radius: 50%; /* Use 50% for perfect circle regardless of exact size */
-    border: none;
 }
 
 .close-button p:hover{
@@ -87,6 +88,8 @@
 }
 
 .close-button p{
+    outline: none;
+    border: none;
     transform: translate(-1px, -4px);
     transition: 0.3s;
 }

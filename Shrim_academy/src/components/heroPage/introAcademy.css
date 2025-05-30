@@ -73,20 +73,21 @@
 }
 
 .enroll-button {
-margin-top: 10px;
-  background-color: rgba(0, 0, 0, 0); /* Transparent background */
-  outline: none;
-  border: none;
-  border: 1px solid white;
-  border-radius: 50px;
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer; /* Add a cursor for better user feedback */
-  transition: 0.3s ease; /* Smooth transition for the hover effect */
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid whitesmoke;
+    padding: 10px 20px;
+    cursor: pointer; /* Add a cursor for better user feedback */
+    transition: 0.8s; /* Smooth transition for the hover effect */
 }
 
 .enroll-button:hover {
-    border: 1px solid rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 1); /* Solid white background on hover */
-  color: black /* Keep the text color white initially */
+    margin-top: 10px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 1); /* Solid white background on hover */
+    color: black /* Keep the text color white initially */
 }

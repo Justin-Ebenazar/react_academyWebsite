@@ -1,5 +1,5 @@
 import './pianoExplore.css';
-import Styleform from './formElements/styleForm'
+import Styleform from '../formElements/styleForm'
 
 function PianoExplore(){
     return(
