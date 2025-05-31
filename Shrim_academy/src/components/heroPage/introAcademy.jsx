@@ -1,5 +1,6 @@
 import './introAcademy.css'; // Import CSS for styling
 import pianoBackground from '../../assets/playing_piano_background.jpg'; // Adjust the path if necessary
+import { Link } from 'react-router-dom'; // CORRECT
 
 const IntroAcademy = () => {
     return (
@@ -15,7 +16,11 @@ const IntroAcademy = () => {
                         Join us to explore your passion for music and unlock your true potential.
                         At Shrim Music Academy, we believe in nurturing talent and inspiring creativity.
                     </p>
-                    <button className="enroll-button">Enroll now</button>
+                    <Link to="/pianoCourse" className="nav-link">
+                        hello 
+                    </Link>
+                        <button className="enroll-button">Enroll now</button>
+                    
                 </div>
             </div>
         </div>

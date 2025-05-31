@@ -1,5 +1,5 @@
-import React from 'react';
 import './navBar.css'; // Optional: Add CSS for styling
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -8,7 +8,7 @@ const NavBar = () => {
                 <h1></h1>
             </div>
             <ul className="navbar-links">
-                <li><a href="#home">Home</a></li>
+                <Link to="/" className='nav-link'><li><a href="#home">Home</a></li></Link>
                 <li><a href="#about">About</a></li>
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#contact">Contact</a></li>

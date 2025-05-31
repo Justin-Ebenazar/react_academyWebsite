@@ -1,0 +1,17 @@
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.contact-us{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+
+}

@@ -22,6 +22,7 @@
     outline: none;
     border: none;
     border-radius: 15px;
+    background-attachment: fixed;
     box-shadow: 1px 4px 4px rgba(0,0,0,0.3);
 
 }

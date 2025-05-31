@@ -5,5 +5,169 @@
     width:100vw;
     height:93vh;
     background: linear-gradient(133deg,rgba(2, 0, 36, 1) 0%, rgba(92, 9, 117, 1) 35%, rgba(23, 14, 14, 1) 100%);
+    margin-top: 7vh;
+    gap: 2vw;
+}
+
+.sidepane{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 7px;
+    width: 25vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 70px 200px 10px 10px;
+    overflow: hidden ;
+}
+
+.sidepane img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
+
+.sidepane h2{
+    font-size: 2.2rem;
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-section{
+    border-radius: 0px;
+    display: flex;
+    width: 100%;
+    height: 40vh; 
+    border-radius: 70px 200px 0px 0px;
+}
+
+.form-open-piano{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-top: 1vh;
+    background-color: black; 
+    color: white;
+    animation: blobPulse 2s infinite;
+    transition: 0.5s ease;
+}
+
+@keyframes blobPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px 2px rgba(0, 255, 255, 0.5); /* Subtle glow */
+        filter: brightness(1); /* No change */
+    }
+    50% {
+        transform: scale(1.015); /* Slightly more pronounced lift and expand */
+        box-shadow: 0 0 15px 2px rgba(0, 119, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.3); /* Brighter, larger glow */
+        filter: brightness(1.05); /* Slightly brighter */
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px 2px rgba(15, 0, 226, 0.5); /* Return to initial state */
+        filter: brightness(1);
+    }
+}
+
+.form-open-piano:hover{
+    background-color:rgba(0, 119, 255, 1);
+}
+
+.maincontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    width: 50vw;
+    height: 80vh;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 1vw;
+}
+
+.slide-navbar{
+    margin-top: 1.5vh;
+    background-color: #b4b4b4;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items:end;
+    height: 7%;
+    width: 95%;
+    border-radius: 100px;
+}
+
+.tab-options-selected{
+    display: flex;
+    height: 90%;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tab-options-selected:hover{
+    background-color: #ffffffd7;
+}
+
+.tab-options{
+    display: flex;
+    height: 100%;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.3s;
+}
+
+.tab-options:hover{
+    background-color: #d3d3d3;
+}
+
+.contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 1%;
+    box-shadow: 3px 4px 0px rgba(0,0,0,0.5) ;
+    width: 92%;
+    height: 80%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.div1,.div2,.div3,.div4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    animation:slideInFromLeft 0.4s ease-out;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateY(100%); /* Start 100% of its own width to the left */
+        opacity: 0; /* And invisible */
+    }
+    to {
+        transform: translateY(0); /* End at its normal position */
+        opacity: 1; /* And fully visible */
+    }
 }
 

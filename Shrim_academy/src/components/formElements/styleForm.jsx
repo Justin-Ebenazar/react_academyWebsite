@@ -42,7 +42,7 @@ function Styleform(){
     return(
         <>
         <div className="form-container">
-            <div className="image-section">
+            <div className="image-section-form">
                 <img src={music} alt="Music" />
             </div>
             <div className="form-section" >
