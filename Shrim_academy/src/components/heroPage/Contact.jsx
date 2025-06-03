@@ -4,7 +4,7 @@ import './ContactSection.css'; // Make sure to keep your CSS file
 
 function ContactSection() {
     return (
-        <section id="contact" className="contact-section">
+        <section id="section-about" className="contact-section">
             <div className='contact-us'>
                 <h2>Contact us </h2>
             </div>

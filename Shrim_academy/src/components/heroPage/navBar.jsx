@@ -1,5 +1,5 @@
 import './navBar.css'; // Optional: Add CSS for styling
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const NavBar = () => {
     return (
@@ -8,10 +8,10 @@ const NavBar = () => {
                 <h1></h1>
             </div>
             <ul className="navbar-links">
-                <Link to="/" className='nav-link'><li><a href="#home">Home</a></li></Link>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><HashLink to="/#section-home" smooth className='nav-link'>Home</HashLink></li>
+                <li><HashLink to="/#section-courses" smooth className='nav-link'>Courses</HashLink></li>
+                <li><HashLink to="/#section-about" smooth className='nav-link'>About</HashLink></li>
+                <li><HashLink to="/#section-about" smooth className='nav-link'>Contact</HashLink></li>
             </ul>
         </nav>
     );

@@ -86,6 +86,6 @@
 
 /* Style for the currently selected option in the list (if applicable) */
 .custom-select-option.selected {
-    background-color: #3f064b00; /* Different background for selected item */
+    background-color: #3f064b63; /* Different background for selected item */
     font-weight: bold; /* Make selected item bold */
 }

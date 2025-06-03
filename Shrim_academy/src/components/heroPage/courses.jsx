@@ -6,12 +6,13 @@ import trinityLogo from '../../assets/trinityLogo.png';
 import abrsmLogo from '../../assets/abrsmLogo.png';
 import pianoLogo from '../../assets/pianoLogo.png';
 import Form from '../formElements/styleForm';
+import { Link } from 'react-router-dom';
 
 function Courses() {
 return (
-                    <>
+                    <div id="section-courses">
                             <div className="courses-piano">
-                                        <Form/>
+                                        {/* <Form/> */}
                                     <div className="piano-classes-image">
                                             <img src={pianoCourse} alt="piano" />
                                     </div>
@@ -29,7 +30,9 @@ return (
                                                             For students looking to achieve recognized musical qualifications, we offer dedicated preparation for examinations following the esteemed syllabi of Trinity College London and the Associated Board of the Royal Schools of Music (ABRSM).
                                                     </p>
                                                     <div className="enroll-button-container">
+                                                        <Link to='pianoCourse'>
                                                             <button className="enroll-button-piano">Enroll for Piano Class</button>
+                                                        </Link>
                                                     </div>
                                     </div>
                             </div>
@@ -43,7 +46,9 @@ return (
                                                     <p>
                                                             Embark on your musical journey with us! Whether you're a student <br/>aiming for musical excellence or an adult looking to unwind with<br/> your favorite tunes, we have the perfect guitar program for you.                                                    </p>
                                                     <div className="enroll-button-container">
+                                                        <Link to='guitarCourse'>
                                                             <button className="enroll-button-guitar">Enroll for guitar class</button>
+                                                        </Link>
                                                     </div>
                                     </div>
                                 </div>
@@ -63,14 +68,16 @@ return (
                                                             For students looking to achieve recognized musical qualifications, we offer dedicated preparation for examinations following the esteemed syllabi of Trinity College London and the Associated Board of the Royal Schools of Music (ABRSM).
                                                     </p>
                                                     <div className="enroll-button-container">
+                                                        <Link to='keyboardCourse'>
                                                             <button className="enroll-button-keyboard">Enroll for keyboard Class</button>
+                                                        </Link>
                                                     </div>
                                     </div>
                                     <div className="keyboard-classes-image">
                                             <img src={keyboardCourse} alt="electronicKeyboard" />
                                     </div>
                                 </div>
-                    </>
+                    </div>
 );
 }
 

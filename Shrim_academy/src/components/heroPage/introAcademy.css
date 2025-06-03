@@ -1,10 +1,10 @@
 /* introAcademy.css - Optimized Version */
 .intro-academy {
-    margin-top: 7vh;
+    /* margin-top: 7vh; */
     position: relative;
     width: 100vw;
-    height: 93vh;
-    min-height: calc(100vh-  7vh); /* Full viewport height */
+    height: 100vh;
+    min-height: 100vh; /* Full viewport height */
     /* overflow: hidden; */
     display: flex;
     align-items: center;

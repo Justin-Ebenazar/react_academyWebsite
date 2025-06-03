@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'; // CORRECT
 
 const IntroAcademy = () => {
     return (
-        <div className="intro-academy" >
+        <div id='section-home' className="intro-academy" >
             <img src={pianoBackground} className="introImage" alt="Piano Background" />
             <div className="overlay">
                 <div className="intro-content">
@@ -16,9 +16,6 @@ const IntroAcademy = () => {
                         Join us to explore your passion for music and unlock your true potential.
                         At Shrim Music Academy, we believe in nurturing talent and inspiring creativity.
                     </p>
-                    <Link to="/pianoCourse" className="nav-link">
-                        hello 
-                    </Link>
                         <button className="enroll-button">Enroll now</button>
                     
                 </div>

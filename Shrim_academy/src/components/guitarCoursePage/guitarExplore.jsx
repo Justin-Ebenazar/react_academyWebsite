@@ -1,46 +1,50 @@
-import './pianoExplore.css';
+import style from './guitarExplore.module.css';
 import { useState } from 'react';
-import Styleform from '../formElements/styleForm'
-import PianoImage from '../../assets/pianoCourse/pianoCourse.jpg'
+import Styleform from '../formElements/styleForm';
+import GuitarImage from '../../assets/guitarCourse/guitarCourse.jpg';
 
-function PianoExplore(){
+function GuitarExplore() {
+    const [activeDiv, setactiveDiv] = useState('div1');
 
-    const [activeDiv, setactiveDiv]= useState('div1');
-    const [formStatus, setformStatus]= useState(false);
-    return(
-        <section className="piano-explore">
-            {formStatus && (
-                <Styleform closeForm={setformStatus} course="piano" />
-            )}
-            <div className='sidepane'>
-                <div className='image-section'>
-                    <img src={PianoImage} alt="pianoimage"/>
+    return (
+        <section className={style['piano-explore']}>
+            <div className={style.sidepane}>
+                <div className={style['image-section']}>
+                    <img src={GuitarImage} alt="pianoimage" />
                 </div>
-                <h2>Your Piano Mastery Journey Begins Here!</h2>
-                <button className='form-open-piano' onClick={() => setformStatus(true)}>Enroll </button>
+                <h2 className={style['sidepane-h2']}>Embark your Guitar learning journey with Shrim!</h2>
+                <button className={style['form-open-piano']}>Enroll</button>
             </div>
-            <div className='maincontent'>
-                <div className="slide-navbar">
-                    <span className={activeDiv === 'div1' ? 'tab-options-selected' : 'tab-options'} 
-                    onClick={() => setactiveDiv('div1')}>
+            <div className={style.maincontent}>
+                <div className={style['slide-navbar']}>
+                    <span
+                        className={activeDiv === 'div1' ? style['tab-options-selected'] : style['tab-options']}
+                        onClick={() => setactiveDiv('div1')}
+                    >
                         Course overview
                     </span>
-                    <span className={activeDiv === 'div2' ? 'tab-options-selected' : 'tab-options'} 
-                    onClick={() => setactiveDiv('div2')}>
+                    <span
+                        className={activeDiv === 'div2' ? style['tab-options-selected'] : style['tab-options']}
+                        onClick={() => setactiveDiv('div2')}
+                    >
                         Styles & Syllabi
                     </span>
-                    <span className={activeDiv === 'div3' ? 'tab-options-selected' : 'tab-options'} 
-                    onClick={() => setactiveDiv('div3')}>
+                    <span
+                        className={activeDiv === 'div3' ? style['tab-options-selected'] : style['tab-options']}
+                        onClick={() => setactiveDiv('div3')}
+                    >
                         Course options
                     </span>
-                    <span className={activeDiv === 'div4' ? 'tab-options-selected' : 'tab-options'} 
-                    onClick={() => setactiveDiv('div4')}>
+                    <span
+                        className={activeDiv === 'div4' ? style['tab-options-selected'] : style['tab-options']}
+                        onClick={() => setactiveDiv('div4')}
+                    >
                         Get started : Fee
                     </span>
                 </div>
-                <div className='contents'>
+                <div className={style.contents}>
                     {activeDiv === 'div1' && (
-                        <div className='div1'>
+                        <div className={style.div1}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
@@ -48,20 +52,20 @@ function PianoExplore(){
                         </div>
                     )}
                     {activeDiv === 'div2' && (
-                        <div className='div2'>
+                        <div className={style.div2}>
                             The shimmering cascade of emerald light danced across the forgotten spire, hinting at narratives untold. Below, the gentle hum of ancient mechanisms stirred, a rhythmic counterpoint to the whispered secrets carried on the unseen currents. A lone, iridescent feather drifted past the observation deck, a fleeting testament to journeys both concluded and yet to begin.                        
                         </div>
                     )}
-                    {activeDiv ==='div3' && (
-                        <div className='div3'>
+                    {activeDiv === 'div3' && (
+                        <div className={style.div3}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
                         </div>
                     )}
-                    {activeDiv ==='div4' && (
-                        <div className='div4'>
+                    {activeDiv === 'div4' && (
+                        <div className={style.div4}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
@@ -70,8 +74,8 @@ function PianoExplore(){
                     )}
                 </div>
             </div>
-        </section>  
+        </section>
     );
 }
 
-export default PianoExplore;
+export default GuitarExplore;
