@@ -2,11 +2,13 @@ import './pianoExplore.css';
 import { useState } from 'react';
 import Styleform from '../formElements/styleForm'
 import PianoImage from '../../assets/pianoCourse/pianoCourse.jpg'
+import FeesTable from '../feesTable/feesTable'
 
 function PianoExplore(){
 
     const [activeDiv, setactiveDiv]= useState('div1');
     const [formStatus, setformStatus]= useState(false);
+    
     return(
         <section className="piano-explore">
             {formStatus && (
@@ -41,31 +43,37 @@ function PianoExplore(){
                 <div className='contents'>
                     {activeDiv === 'div1' && (
                         <div className='div1'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
+                            <h2>Discover Your Melody at Shrim Academy</h2>
+                            <p>Welcome to Shrim Music Academy, where the joy of piano comes alive! At Shrim , we are dedicated to sharing our passion for music and guiding you on your piano journey. We believe in nurturing each student's potential in a warm, personalized, and supportive environment.</p>
+                            <br/>
+                            <h2>Our approach</h2>
+                            <p>At Shrim Music Academy, we pride ourselves on creating a friendly and encouraging atmosphere. At Shrim, we offer a unique blend of experience and personalized attention. We understand that every student learns differently, and we adapt our teaching methods to suit your individual pace and learning style, ensuring a fulfilling and enjoyable musical experience.</p>
                         </div>
                     )}
                     {activeDiv === 'div2' && (
                         <div className='div2'>
-                            The shimmering cascade of emerald light danced across the forgotten spire, hinting at narratives untold. Below, the gentle hum of ancient mechanisms stirred, a rhythmic counterpoint to the whispered secrets carried on the unseen currents. A lone, iridescent feather drifted past the observation deck, a fleeting testament to journeys both concluded and yet to begin.                        
+                            <h2>Exam preparation</h2>
+                            <p>For students who wish to achieve recognized musical qualifications, we offer dedicated preparation for examinations. We follow the esteemed syllabi of:</p>
+                            <br/>
+                            <b>Trinity College London</b>
+                            <br/>
+
+                            <b>Associated Board of the Royal Schools of Music (ABRSM)</b>
+                            <br/>
+
+                            <p>We'll work closely with you to prepare for these exams, helping you build confidence and achieve your certification goals.</p>
                         </div>
                     )}
                     {activeDiv ==='div3' && (
                         <div className='div3'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
+                            <h2>Choose Your Learning Style at Shrim Music Academy</h2>
+                            <p>At Shrim Music Academy, we understand that every student has unique needs and preferences when it comes to learning music. That's why we offer a range of flexible course styles designed to fit your schedule, location, and learning comfort. All our styles are available in convenient 4-Class or 6-Class packages.</p>
+                            
                         </div>
                     )}
                     {activeDiv ==='div4' && (
                         <div className='div4'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
+                            <FeesTable/>
                         </div>
                     )}
                 </div>

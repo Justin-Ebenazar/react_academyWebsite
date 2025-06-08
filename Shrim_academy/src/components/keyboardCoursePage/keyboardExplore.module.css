@@ -149,14 +149,14 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    animation:slideInFromLeft 0.4s ease-out;
+    animation:slideInFromLeft 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
     width: 100%;
     height: 100%;
 }
 
 @keyframes slideInFromLeft {
     from {
-        transform: translateY(100%); /* Start 100% of its own width to the left */
+        transform: translateY(20%); /* Start 100% of its own width to the left */
         opacity: 0; /* And invisible */
     }
     to {

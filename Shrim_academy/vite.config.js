@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173, 
     allowedHosts: [
       'localhost',
-      '8074-2401-4900-93fe-e369-8579-cc22-16e-3b5d.ngrok-free.app'
+      'c486-2401-4900-633a-5c7b-a14b-1b7-ac24-9a05.ngrok-free.app'
     ],
   },
 });

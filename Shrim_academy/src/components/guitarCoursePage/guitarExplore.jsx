@@ -2,18 +2,23 @@ import style from './guitarExplore.module.css';
 import { useState } from 'react';
 import Styleform from '../formElements/styleForm';
 import GuitarImage from '../../assets/guitarCourse/guitarCourse.jpg';
+import FeesTable from '../feesTable/feesTable.jsx';
 
 function GuitarExplore() {
     const [activeDiv, setactiveDiv] = useState('div1');
+    const [formStatus, setformStatus]= useState(false);
 
     return (
         <section className={style['piano-explore']}>
+            {formStatus && (
+                <Styleform closeForm={setformStatus} course="guitar" />
+             )}
             <div className={style.sidepane}>
                 <div className={style['image-section']}>
                     <img src={GuitarImage} alt="pianoimage" />
                 </div>
                 <h2 className={style['sidepane-h2']}>Embark your Guitar learning journey with Shrim!</h2>
-                <button className={style['form-open-piano']}>Enroll</button>
+                <button className={style['form-open-piano']} onClick={() => setformStatus(true)}>Enroll</button>
             </div>
             <div className={style.maincontent}>
                 <div className={style['slide-navbar']}>
@@ -66,10 +71,7 @@ function GuitarExplore() {
                     )}
                     {activeDiv === 'div4' && (
                         <div className={style.div4}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
+                            <FeesTable/>
                         </div>
                     )}
                 </div>

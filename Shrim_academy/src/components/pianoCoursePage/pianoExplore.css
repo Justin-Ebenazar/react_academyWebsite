@@ -117,7 +117,7 @@
     background-color: #ffffff;
     padding: 5px 10px;
     border-radius: 10px 10px 0px 0px;
-    transition: 0.3s;
+    transition: 0.3s ;
     cursor: pointer;
 }
 
@@ -154,17 +154,24 @@
 
 .div1,.div2,.div3,.div4{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
     padding: 10px;
-    animation:slideInFromLeft 0.4s ease-out;
+    animation:slideInFromBottom 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
     width: 100%;
     height: 100%;
 }
 
-@keyframes slideInFromLeft {
+.div1 h2,.div2 h2,.div3 h2,.div4 h2{
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+@keyframes slideInFromBottom {
     from {
-        transform: translateY(100%); /* Start 100% of its own width to the left */
+        transform: translateY(20%); /* Start 100% of its own width to the left */
         opacity: 0; /* And invisible */
     }
     to {

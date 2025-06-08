@@ -5,15 +5,19 @@ import KeyboardImage from '../../assets/keyboardCourse/keyboardCourse.webp';
 
 function GuitarExplore() {
     const [activeDiv, setactiveDiv] = useState('div1');
+    const [formStatus, setformStatus]= useState(false);
 
     return (
         <section className={style['piano-explore']}>
+            {formStatus && (
+                <Styleform closeForm={setformStatus} course="keyboard" />
+            )}
             <div className={style.sidepane}>
                 <div className={style['image-section']}>
                     <img src={KeyboardImage} alt="keyboardimage" />
                 </div>
                 <h2 className={style['sidepane-h2']}>Embark your Guitar learning journey with Shrim!</h2>
-                <button className={style['form-open-piano']}>Enroll</button>
+                <button className={style['form-open-piano']} onClick={() => setformStatus(true)}>Enroll</button>
             </div>
             <div className={style.maincontent}>
                 <div className={style['slide-navbar']}>
