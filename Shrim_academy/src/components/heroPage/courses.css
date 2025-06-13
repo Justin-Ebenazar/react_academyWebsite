@@ -1,48 +1,51 @@
-.courses-piano{
+.courses-piano {
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 86vh;
     width: 100vw;
-    background-color: rgb(255, 255, 255);
 }
 
-.piano-classes-image{
+.piano-classes-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 40%;
-    background-color: rgb(255, 255, 255);
+    height: 86vh;
+    width: 50vw;
 }
 
-.piano-classes-image img{
+.piano-classes-image img {
     display: flex;
-    width: 90%;
+    height: 70%;
     outline: none;
     border: none;
     border-radius: 15px;
     background-attachment: fixed;
-    box-shadow: 1px 4px 4px rgba(0,0,0,0.3);
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
 
 }
 
-.piano-classes-content{
+.piano-classes-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 60%;
-    background-color: rgb(255, 255, 255);
+    height: 90%;
+    width: 50%;
+    background-color: rgba(255, 2, 255, 0);
 }
 
-.piano-classes-content h1{
-    padding: 10px 20px;
-
+.piano-classes-content h1 {
+    font-size: 1.8rem;
 }
 
-.piano-classes-content p{
+.piano-classes-content h2 {
+    font-size: 1.5rem;
+    color: #6e6e6e
+}
+
+.piano-classes-content p {
     padding: 5px 20px 15px 20px;
 }
 
@@ -58,19 +61,20 @@
     width: 100%;
     height: 70%;
     outline: none;
-    border: none;    
+    border: none;
 }
 
-.enroll-button-piano{
+.enroll-button-piano {
     border: 1px solid blue;
 }
 
-.enroll-button-piano:hover{
+.enroll-button-piano:hover {
     border: 1px solid rgb(121, 217, 255);
     background-color: rgb(121, 217, 255);
     color: white;
 }
-.courses-guitar{
+
+.courses-guitar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,51 +83,52 @@
     background-color: rgb(255, 255, 255);
 }
 
-.guitar-classes-section{
+.guitar-classes-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
-    width: 90vw;
+    height: 80vh;
+    width: 75vw;
     border-radius: 15px;
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover ;
+    background-size: cover;
     box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.3);
 }
-.guitar-classes-image{
+
+.guitar-classes-image {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 50%;
-    background-color: rgba(0, 0, 0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.guitar-classes-content{
+.guitar-classes-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.guitar-classes-content h1{
+.guitar-classes-content h1 {
     padding: 10px 20px;
     color: white;
 
 }
 
-.guitar-classes-content p{
+.guitar-classes-content p {
     padding: 5px 20px 15px 20px;
     font-size: 1.5rem;
     color: white;
 }
 
-.courses-keyboard{
+.courses-keyboard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,25 +137,156 @@
     background-color: rgb(255, 255, 255);
 }
 
-.courses-keyboard img{
+#section-courses {
+    padding-top: 7vh;
+}
+
+.courses-heading {
+    /* background-color: rgb(255, 2, 255); */
+    margin-top: 2vh;
+    margin-left: 3vh;
+    font-size: 2rem;
+}
+
+
+
+.courses-keyboard img {
     display: flex;
     width: 100%;
 }
 
-.keyboard-classes-content{
+.keyboard-classes-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 55%;
-    background-color: rgb(0, 255, 255);
+    width: 45%;
+    background-color: rgba(0, 255, 255, 0);
 }
 
-.keyboard-classes-image{
-    display:flex;
+.keyboard-classes-content h1 {
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+
+.keyboard-classes-content h2 {
+    padding: 5px 20px 15px 20px;
+    font-size: 1.5rem;
+}
+
+.keyboard-classes-image {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
-    background-color: green;
+    width: 40%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 15px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.enroll-button-keyboard {
+    border: 1px solid blue;
+    transition: 0.3s;
+}
+
+.enroll-button-keyboard:hover {
+    border: 1px solid rgb(121, 217, 255);
+    background-color: rgb(121, 217, 255);
+    color: white;
+}
+
+/* for tablet */
+@media screen and (max-width: 768px) {
+    .courses-piano {
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+    }
+
+    .piano-classes-image {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .piano-classes-content {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .syllabiLogo {
+        height: 10vh;
+        gap: 20vw;
+    }
+
+    .guitar-classes-section {
+        height: 70%;
+        width: 85%;
+    }
+
+    .guitar-classes-content {
+        height: 100%;
+    }
+
+    .guitar-classes-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .guitar-classes-content p {
+        font-size: 1.2rem;
+    }
+
+    .courses-keyboard {
+        flex-direction: column;
+        /* align-items: flex-start; */
+        justify-items: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .keyboard-classes-content {
+        width: 90%;
+        height: 45%;
+    }
+
+    .keyboard-classes-image{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .courses-piano{
+        gap: 0;
+        /* background-color: yellow; */
+    }
+    .piano-classes-image{
+        width: 100%;
+        height : 40vh;
+    }
+    .piano-classes-content{
+        padding: 10px;
+    }
+    .piano-classes-content h1{
+        font-size: 1.7rem;
+    }
+    
+    .guitar-classes-section{
+        height: 85vh;
+        width: 90vw;
+        text-align: center;
+    }
+    
+    .guitar-classes-section h1{
+        font-size: 2rem;
+    }
+    
+    .keyboard-classes-content h1{
+        font-size: 1.5rem;
+    }
+
+    .keyboard-classes-content h2{
+        font-size: 1.2rem;
+    }
 }

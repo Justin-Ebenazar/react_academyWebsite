@@ -2,7 +2,6 @@ import style from './guitarExplore.module.css';
 import { useState } from 'react';
 import Styleform from '../formElements/styleForm';
 import GuitarImage from '../../assets/guitarCourse/guitarCourse.jpg';
-import FeesTable from '../feesTable/feesTable.jsx';
 
 function GuitarExplore() {
     const [activeDiv, setactiveDiv] = useState('div1');
@@ -71,7 +70,6 @@ function GuitarExplore() {
                     )}
                     {activeDiv === 'div4' && (
                         <div className={style.div4}>
-                            <FeesTable/>
                         </div>
                     )}
                 </div>

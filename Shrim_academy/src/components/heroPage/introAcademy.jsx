@@ -1,6 +1,6 @@
 import './introAcademy.css'; // Import CSS for styling
 import pianoBackground from '../../assets/playing_piano_background.jpg'; // Adjust the path if necessary
-import { Link } from 'react-router-dom'; // CORRECT
+import { HashLink } from 'react-router-hash-link';
 
 const IntroAcademy = () => {
     return (
@@ -16,8 +16,9 @@ const IntroAcademy = () => {
                         Join us to explore your passion for music and unlock your true potential.
                         At Shrim Music Academy, we believe in nurturing talent and inspiring creativity.
                     </p>
-                        <button className="enroll-button">Enroll now</button>
-                    
+                    <HashLink to="/#section-courses" smooth className='nav-link'>
+                        <button style={{backgroundColor: 'rgb(0, 185, 209)', color: 'white'}}>Explore Courses</button>                    
+                    </HashLink>
                 </div>
             </div>
         </div>

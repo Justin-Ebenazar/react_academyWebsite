@@ -2,7 +2,6 @@ import './pianoExplore.css';
 import { useState } from 'react';
 import Styleform from '../formElements/styleForm'
 import PianoImage from '../../assets/pianoCourse/pianoCourse.jpg'
-import FeesTable from '../feesTable/feesTable'
 
 function PianoExplore(){
 
@@ -35,10 +34,6 @@ function PianoExplore(){
                     onClick={() => setactiveDiv('div3')}>
                         Course options
                     </span>
-                    <span className={activeDiv === 'div4' ? 'tab-options-selected' : 'tab-options'} 
-                    onClick={() => setactiveDiv('div4')}>
-                        Get started : Fee
-                    </span>
                 </div>
                 <div className='contents'>
                     {activeDiv === 'div1' && (
@@ -53,7 +48,7 @@ function PianoExplore(){
                     {activeDiv === 'div2' && (
                         <div className='div2'>
                             <h2>Exam preparation</h2>
-                            <p>For students who wish to achieve recognized musical qualifications, we offer dedicated preparation for examinations. We follow the esteemed syllabi of:</p>
+                            <p> </p>
                             <br/>
                             <b>Trinity College London</b>
                             <br/>
@@ -69,11 +64,6 @@ function PianoExplore(){
                             <h2>Choose Your Learning Style at Shrim Music Academy</h2>
                             <p>At Shrim Music Academy, we understand that every student has unique needs and preferences when it comes to learning music. That's why we offer a range of flexible course styles designed to fit your schedule, location, and learning comfort. All our styles are available in convenient 4-Class or 6-Class packages.</p>
                             
-                        </div>
-                    )}
-                    {activeDiv ==='div4' && (
-                        <div className='div4'>
-                            <FeesTable/>
                         </div>
                     )}
                 </div>

@@ -12,7 +12,7 @@ function ModelScene({progress}){
         cameraRef.current.lookAt(0,0,0);
      })
      useEffect(()=>{
-        const positions=[[30,20,40],[-50,20,40],[0,5,40]];
+        const positions=[[30,20,40],[-30,20,40],[0,5,40]];
         if(progress >=1){
             gsap.to(cameraRef.current.position, {
                 x: 0,
@@ -47,8 +47,8 @@ function ModelScene({progress}){
      },[progress])
     return(
         <>
-            <axesHelper args={[50]}/>
-            <PerspectiveCamera ref={cameraRef} fov= {45} near={1} far={10000} makeDefault  position={[30, 20, 40]}/>
+            <OrbitControls/>
+            <PerspectiveCamera ref={cameraRef} fov= {45} near={1} far={10000} makeDefault  position={[30, 20, 60]}/>
             <Environment preset="city" />
             <Model/>
         </>

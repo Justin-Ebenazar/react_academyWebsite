@@ -7,11 +7,16 @@ import CustomSelect from './CustomSelectElements/CustomSelect';
 import React, { useState, useEffect } from 'react'; // Ensure useEffect is imported
 
 function Styleform({ closeForm, course }) {
+    const [name,setName]=useState('');
+    const [contact,setContact]=useState('');
+    const [age,setAge]=useState('');
+    // Initialize state for instrument, genre, mode, plan, and level
+    const [level, setLevel] = useState('');
     const [instrument, setInstrument] = useState(course ? course : '');
     const [genre, setGenre] = useState('');
     const [mode, setMode] = useState('');
     const [plan, setPlan] = useState('');
-    const [level, setLevel] = useState('');
+
     let music;
     if(course === 'piano')
         music=piano;
@@ -47,6 +52,14 @@ function Styleform({ closeForm, course }) {
             if (genre === 'western') {
                 setGenre('');
             }
+        }
+        else if (instrument === 'piano') {
+            // If instrument is guitar or vocal, only show 'Carnatic'
+            setFilteredGenreOptions([{ value: 'western', label: 'Western' }]);
+            // Optional: If 'Western' was selected, reset 'genre' to avoid an invalid selection
+            if (genre === 'western') {
+                setGenre('');
+            }
         } else {
             // Otherwise, show all original genre options
             setFilteredGenreOptions(genreOptions);
@@ -68,6 +81,35 @@ function Styleform({ closeForm, course }) {
         { value: 'intermediate', label: 'I know a bit' },
         { value: 'advanced', label: 'Seeking Advanced Study' }
     ];
+    //form submit to gfrmo
+
+    const handleSubmit = () => {
+        if (!name || !contact || !age || !level || !instrument || !genre || !mode  || !plan) {
+            alert("Please fill in all details before submitting!");
+        } else {
+            const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSccXeiW69ORgmLl7LDfbTxjOQQDFwqIaLPxKQyd0hculcIWXw/formResponse";
+            
+            // Create a form data object
+            const formData = new FormData();
+            formData.append("entry.1963676883", name);
+            formData.append("entry.1985378627", contact);
+            formData.append("entry.1456560257", age);
+            formData.append("entry.1086088657", level);
+            formData.append("entry.29268960", instrument);
+            formData.append("entry.2070950819", genre);
+            formData.append("entry.707292342", mode);
+            formData.append("entry.751630101", plan);
+            
+            fetch(googleFormURL, {
+            method: "POST",
+            body: formData,
+            })
+            .then(() => alert("Form submitted successfully!"))
+            .catch(() => alert("Form submitted successfully!"));
+            closeForm(false); // Close the form after submission
+        }
+        };
+
 
     return (
         <>
@@ -84,9 +126,9 @@ function Styleform({ closeForm, course }) {
                     </div>
                     <div className="form-section-contents">
                         <div className="form-section-left">
-                            <input type="text" name="studentName" placeholder="Student Name" required />
-                            <input type="text" name="contactNumber" placeholder="Contact Number" required />
-                            <input type="number" name="age" placeholder="Age" required />
+                            <input type="text" name="studentName" placeholder="Student Name" onChange={(e) => setName(e.target.value)} />
+                            <input type="text" name="contactNumber" placeholder="Contact Number" onChange={(e) => setContact(e.target.value)} />
+                            <input type="number" name="age" placeholder="Age" onChange={(e) => setAge(e.target.value)} />
                             <CustomSelect
                                 options={levelOptions}
                                 placeholder="Level"
@@ -125,7 +167,7 @@ function Styleform({ closeForm, course }) {
                             />
                         </div>
                     </div>
-                    <button type="button">Submit</button>
+                    <button type="button" onClick={handleSubmit}>Submit</button>
                 </div>
             </div>
         </>
