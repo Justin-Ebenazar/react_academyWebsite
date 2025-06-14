@@ -1,8 +1,8 @@
 .contact-section{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: auto;
     width: 100vw;
     background-color: rgba(0,0,0,0.9);
 }

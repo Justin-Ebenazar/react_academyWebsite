@@ -130,7 +130,7 @@
 
 .courses-keyboard {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
     width: 100vw;
@@ -187,6 +187,7 @@
 }
 
 .enroll-button-keyboard {
+    margin: 3vh;
     border: 1px solid blue;
     transition: 0.3s;
 }

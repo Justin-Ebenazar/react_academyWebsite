@@ -39,12 +39,6 @@ function GuitarExplore() {
                     >
                         Course options
                     </span>
-                    <span
-                        className={activeDiv === 'div4' ? style['tab-options-selected'] : style['tab-options']}
-                        onClick={() => setactiveDiv('div4')}
-                    >
-                        Get started : Fee
-                    </span>
                 </div>
                 <div className={style.contents}>
                     {activeDiv === 'div1' && (
@@ -66,10 +60,6 @@ function GuitarExplore() {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, inventore nulla accusantium eligendi perspiciatis quae incidunt alias dicta, est, laborum optio nostrum vel omnis esse? Porro accusamus veritatis soluta maiores!   
-                        </div>
-                    )}
-                    {activeDiv === 'div4' && (
-                        <div className={style.div4}>
                         </div>
                     )}
                 </div>
