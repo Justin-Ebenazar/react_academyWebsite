@@ -11,13 +11,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 86vh;
-    width: 50vw;
+    /* height: 86vh;
+    width: 50vw; */
+    /* background-color: green; */
 }
 
 .piano-classes-image img {
     display: flex;
-    height: 70%;
+    height: 65%;
     outline: none;
     border: none;
     border-radius: 15px;
@@ -34,6 +35,8 @@
     height: 90%;
     width: 50%;
     background-color: rgba(255, 2, 255, 0);
+    /* background-color: yellow; */
+    padding: 10px;
 }
 
 .piano-classes-content h1 {
@@ -62,16 +65,24 @@
     height: 70%;
     outline: none;
     border: none;
+    transition: 0.8s;
+}
+
+.syllabiLogo img:hover {
+    transform: translateY(-10px);
 }
 
 .enroll-button-piano {
-    border: 1px solid blue;
+    background-color: rgba(121, 217, 255, 0.3);
+    border: 1px solid rgb(121, 217, 255);
+    transition: 0.5s;
 }
 
 .enroll-button-piano:hover {
     border: 1px solid rgb(121, 217, 255);
     background-color: rgb(121, 217, 255);
     color: white;
+    transform: translateY(-3px);
 }
 
 .courses-guitar {

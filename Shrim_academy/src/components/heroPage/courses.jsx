@@ -18,9 +18,9 @@ return (
                                     </div>
                                     <div className="piano-classes-content">
                                                     <h1>Unlock Your Musical Journey</h1>
-                                                    <h2> with Piano at Shrim</h2>
+                                                    <h2> with Piano at Shir</h2>
                                                     <p>
-                                                            At Shrim Music Academy, our comprehensive piano lessons provide a strong foundation for aspiring musicians of all ages. We start with basic piano techniques, music theory fundamentals, and ear training to build a solid understanding of music.
+                                                            At Shir Music Academy, our comprehensive piano lessons provide a strong foundation for aspiring musicians of all ages. We start with basic piano techniques, music theory fundamentals, and ear training to build a solid understanding of music.
                                                     </p>
                                                     <div className="syllabiLogo">
                                                             <img src={trinityLogo} alt="Trinity College Logo" style={{ height: '30%' }} />
@@ -40,9 +40,9 @@ return (
                             <div className="courses-guitar">
                                 <div className="guitar-classes-section" style={{backgroundImage: `url(${guitarCourse})`}}>
                                     <div className="guitar-classes-content">
-                                                    <h1>Your Guitar Journey at Shrim</h1>
+                                                    <h1>Your Guitar Journey at Shir</h1>
                                                     <p>
-                                                            Shrim Music Academy, offers amazing carnatic based music classes for you !
+                                                            Shir Music Academy, offers amazing carnatic based music classes for you !
                                                     </p>
                                                     <p>
                                                             Embark on your musical journey with us! Whether you're a student <br/>aiming for musical excellence or an adult looking to unwind with<br/> your favorite tunes, we have the perfect guitar program for you.                                                    </p>
@@ -56,9 +56,9 @@ return (
                             </div>
                                 <div className="courses-keyboard">
                                     <div className="keyboard-classes-content">
-                                                    <h1>Unlock Your Musical Journey</h1><h2> with Piano at Shrim</h2>
+                                                    <h1>Unlock Your Musical Journey</h1><h2> with Piano at Shir</h2>
                                                     <p>
-                                                            At Shrim Music Academy, our comprehensive piano lessons provide a strong foundation for aspiring musicians of all ages. We start with basic piano techniques, music theory fundamentals, and ear training to build a solid understanding of music.
+                                                            At Shir Music Academy, our comprehensive piano lessons provide a strong foundation for aspiring musicians of all ages. We start with basic piano techniques, music theory fundamentals, and ear training to build a solid understanding of music.
                                                     </p>
                                                     <div className="syllabiLogo">
                                                             <img src={trinityLogo} alt="Trinity College Logo" style={{ height: '30%' }} />

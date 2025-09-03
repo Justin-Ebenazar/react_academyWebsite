@@ -1,5 +1,5 @@
-import './introAcademy.css'; // Import CSS for styling
-import pianoBackground from '../../assets/playing_piano_background.jpg'; // Adjust the path if necessary
+import './introAcademy.css'; 
+import pianoBackground from '../../assets/playing_piano_background.jpg'; 
 import { HashLink } from 'react-router-hash-link';
 
 const IntroAcademy = () => {
@@ -9,15 +9,15 @@ const IntroAcademy = () => {
             <div className="overlay">
                 <div className="intro-content">
                     <h1>Unleash Your Musical Potential</h1>
-                    <h2>Shrim Music Academy</h2>
+                    <h2>Shir Music Academy</h2>
                     <p>
-                        Discover the joy of music with our expert instructors and personalized lessons.
+                        Discover the joy of music with passionate instructors and personalized lessons.
                         Whether you're a beginner or an advanced musician, we have something for everyone.
-                        Join us to explore your passion for music and unlock your true potential.
-                        At Shrim Music Academy, we believe in nurturing talent and inspiring creativity.
+                        Join Shir Academy to explore your passion for music and unlock your true potential.
+                        At Shir Music Academy, we believe in nurturing talent and inspiring creativity !
                     </p>
                     <HashLink to="/#section-courses" smooth className='nav-link'>
-                        <button style={{backgroundColor: 'rgb(0, 185, 209)', color: 'white'}}>Explore Courses</button>                    
+                        <button className= "explore-button-hero" >Explore Courses</button>                    
                     </HashLink>
                 </div>
             </div>

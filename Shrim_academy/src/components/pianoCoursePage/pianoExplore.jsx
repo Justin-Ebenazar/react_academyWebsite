@@ -12,15 +12,18 @@ function PianoExplore() {
     const [formStatus, setformStatus] = useState(false);
 
     return (
-        <section className="piano-explore">
+        <section className="piano-explore" style={{backgroundImage: `url(${PianoImage})`, backgroundSize: '600px', backgroundPosition: 'left 300px bottom 80px',backgroundRepeat:'no-repeat'}}>
             {formStatus && (
                 <Styleform closeForm={setformStatus} course="piano" />
             )}
-            <div className='sidepane'>
-                <div className='image-section'>
+            <div className='piano-explore-overlay'>
+            <div className='sidepane' >
+                {/* <div className='image-section'>
                     <img src={PianoImage} alt="pianoimage" />
-                </div>
-                <h2>Your Piano Mastery Journey Begins Here!</h2>
+                </div> */}
+                <h1 style={{marginTop: "18%",marginLeft: "5%"}}>Your Piano Mastery Journey Begins<br></br>Here!</h1>
+            </div>
+            <div className='enroll-overlay'>
                 <button className='form-open-piano' onClick={() => setformStatus(true)}>Enroll </button>
             </div>
             <div className='maincontent'>
@@ -104,6 +107,7 @@ function PianoExplore() {
                         </div>
                     )}
                 </div>
+            </div>
             </div>
         </section>
     );
