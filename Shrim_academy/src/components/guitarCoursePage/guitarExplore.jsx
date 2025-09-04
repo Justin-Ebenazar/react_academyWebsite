@@ -2,21 +2,22 @@ import style from './guitarExplore.module.css';
 import { useState } from 'react';
 import Styleform from '../formElements/styleForm';
 import GuitarImage from '../../assets/guitarCourse/guitarCourse.jpg';
+import guitarBack from '../../assets/guitarCourse/guitarback.jpg';
 
 function GuitarExplore() {
     const [activeDiv, setactiveDiv] = useState('div1');
     const [formStatus, setformStatus]= useState(false);
 
     return (
-        <section className={style['piano-explore']}>
+        <section className={style['piano-explore']} style={{backgroundImage: `url(${guitarBack})`, backgroundSize: 'cover',backgroundRepeat:'no-repeat'}}>
             {formStatus && (
                 <Styleform closeForm={setformStatus} course="guitar" />
              )}
             <div className={style.sidepane}>
-                <div className={style['image-section']}>
+                {/* <div className={style['image-section']}>
                     <img src={GuitarImage} alt="pianoimage" />
-                </div>
-                <h2 className={style['sidepane-h2']}>Embark your Guitar learning journey with Shrim!</h2>
+                </div> */}
+                <h2 className={style['sidepane-h2']}>Embark your Guitar learning journey with Shir</h2>
                 <button className={style['form-open-piano']} onClick={() => setformStatus(true)}>Enroll</button>
             </div>
             <div className={style.maincontent}>

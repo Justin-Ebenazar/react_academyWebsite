@@ -1,6 +1,6 @@
 .piano-explore {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100vw;
     height: 93vh;
@@ -12,12 +12,13 @@
 .sidepane {
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: flex-start;
     align-items: center;
     padding: 7px;
-    width: 25vw;
-    height: 80vh;
-    background-color: white;
+    color: white;
+    width: 40vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 20px 20px 10px 10px;
     overflow: hidden;
 }
@@ -31,7 +32,7 @@
 }
 
 .sidepane h2 {
-    font-size: 2.2rem;
+    font-size: 3.5rem;
     animation: fadeInUp 1s ease;
 }
 
@@ -99,14 +100,15 @@
     justify-content: baseline;
     align-items: center;
     width: 50vw;
-    height: 80vh;
-    background-color: rgba(255, 255, 255, 0.9);
+    height: 60vh;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 1vw;
 }
 
 .slide-navbar {
     margin-top: 1.5vh;
-    background-color: #b4b4b4;
+    /* background-color: #b4b4b4; */
     display: flex;
     /* flex-direction: column; */
     justify-content: space-evenly;
@@ -120,9 +122,10 @@
 .tab-options-selected {
     display: flex;
     height: 90%;
-    background-color: #ffffff;
+    background-color: white;
+    color: black;
     padding: 5px 10px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -136,6 +139,7 @@
     height: 100%;
     padding: 5px 10px;
     border-radius: 50px;
+    color: black;
     cursor: pointer;
     border-radius: 10px 10px 0px 0px;
     transition: 0.3s;
@@ -149,7 +153,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 1);
+    /* backdrop-filter: blur(5px); */
+    color: black;
     margin-top: 1%;
     box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.5);
     width: 92%;

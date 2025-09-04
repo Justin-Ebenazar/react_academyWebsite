@@ -2,13 +2,14 @@ import style from './keyboardExplore.module.css';
 import { useState } from 'react';
 import Styleform from '../formElements/styleForm';
 import KeyboardImage from '../../assets/keyboardCourse/keyboardCourse.webp';
+import keyboardBack from '../../assets/keyboardCourse/keyboardBack.jpg';
 
 function GuitarExplore() {
     const [activeDiv, setactiveDiv] = useState('div1');
     const [formStatus, setformStatus]= useState(false);
 
     return (
-        <section className={style['piano-explore']}>
+        <section className={style['piano-explore']} style={{backgroundImage: `url(${keyboardBack})`, backgroundSize: 'cover',backgroundRepeat:'no-repeat'}}>
             {formStatus && (
                 <Styleform closeForm={setformStatus} course="keyboard" />
             )}
